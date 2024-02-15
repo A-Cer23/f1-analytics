@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const Header = () => {
   return (
-    <header style={{ display: "flex", justifyContent: "space-between", padding: 20 }}>
+    <header style={{ display: "flex", justifyContent: "space-between", padding: 20 }} className={'border-b-2 border-black'}>
       <div>
         <Link href={"/"}>
           F1 Data Analytics
@@ -23,6 +23,9 @@ const Header = () => {
         <UserButton afterSignOutUrl="/"/>
       </SignedIn>
       <SignedOut>
+        <Link href={"/dashboard"}>
+          Dashboard
+        </Link>
         <SignInButton/>
       </SignedOut>
     </header>
