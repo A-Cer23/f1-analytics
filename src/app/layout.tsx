@@ -4,6 +4,9 @@ import {ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton} from "@cle
 import "./globals.css";
 import Link from "next/link";
 
+
+export const runtime = "edge";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
