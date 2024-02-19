@@ -23,12 +23,12 @@ const Header = () => {
         </Link>
       </div>
       <SignedIn>
-        <UserButton afterSignOutUrl="/"/>
-      </SignedIn>
-      <SignedOut>
         <Link href={"/dashboard"}>
           Dashboard
         </Link>
+        <UserButton afterSignOutUrl="/"/>
+      </SignedIn>
+      <SignedOut>
         <SignInButton/>
       </SignedOut>
     </header>
