@@ -5,7 +5,6 @@ import {races} from "@/db/schema";
 import {between, count} from "drizzle-orm";
 
 
-export const runtime = "edge";
 
 export async function actionsGetTotalRacesBetween(start: Number, end: Number) {
   try {
