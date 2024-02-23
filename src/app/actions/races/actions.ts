@@ -5,8 +5,8 @@ import {races} from "@/db/schema";
 import {between, count} from "drizzle-orm";
 
 
-
 export async function actionsGetTotalRacesBetween(start: Number, end: Number) {
+
   try {
     const db = drizzle(process.env.D1DB);
 
