@@ -1,15 +1,12 @@
 import Sidenav from '@/app/ui/dashboard/sidenav';
 
-
-export const runtime = "edge";
-
 export default function Layout({ children}: { children: React.ReactNode }) {
   return (
-    <div className="border-2 border-pink-500 flex">
-      <div className="border-2 border-green-600 mr-5">
+    <div className="border-4 border-pink-500 flex space-x-24">
+      <div className="border-4 border-green-600">
         <Sidenav />
       </div>
-      <div className="border-2 border-yellow-400">{children}</div>
+      <div className="border-4 border-yellow-400 basis-10/12 ">{children}</div>
     </div>
   );
 }
