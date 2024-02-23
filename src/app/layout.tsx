@@ -29,6 +29,9 @@ const Header = () => {
         <UserButton afterSignOutUrl="/"/>
       </SignedIn>
       <SignedOut>
+        <Link href={"/dashboard"}>
+          Dashboard
+        </Link>
         <SignInButton/>
       </SignedOut>
     </header>
@@ -45,7 +48,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <Header />
-          {children}
+          <div className={''}>
+            {children}
+          </div>
         </body>
       </html>
     </ClerkProvider>
