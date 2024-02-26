@@ -17,6 +17,8 @@ export default function ChartTotalRacesBetween(props: {start: number, end: numbe
 
   const [data, setData] = useState<{}[]>([]);
 
+
+
   useEffect(() => {
     const fetchData = async () => {
       const allRaces = await actionsGetTotalRacesBetween(props.start, props.end)
@@ -24,7 +26,7 @@ export default function ChartTotalRacesBetween(props: {start: number, end: numbe
     }
 
     fetchData();
-  })
+  }, [props.start, props.end]);
 
   ChartJS.register(
     CategoryScale,
