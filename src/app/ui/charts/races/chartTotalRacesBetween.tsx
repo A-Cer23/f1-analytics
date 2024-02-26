@@ -13,7 +13,7 @@ import {
 import { Bar } from 'react-chartjs-2';
 
 
-export default function ChartTotalRacesBetween(props: {start: Number, end: Number}) {
+export default function ChartTotalRacesBetween(props: {start: number, end: number}) {
 
   const [data, setData] = useState([]);
 
